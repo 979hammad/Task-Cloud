@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&family=Work+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.signInForm{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    
+    justify-content: center;
+    width: 20vmax;
+    padding: 1vw 3vw;
+    border-radius: 8px;
+}
+
+.signInHeading{
+    font-size: 2.5vw;
+    font-weight: 800;
+}
+
+.signInMsg{
+    font-size: 1vw;
+    margin-bottom: 0.7vw;
+    margin-top: -2px;
+    font-weight: 500;
+}
+
+#password, #email {
+    
+    font-size: 1vw;
+}
+
+#signInFormInputs{
+    margin-bottom: 1vw;
+    color: rgb(195, 0, 0);
+    min-height: 20px;
+}
+
+#loginBtn{
+    font-size: 1vw;
+    border-radius: 20px;
+    padding: 0.35vw;
+    background-color: rgb(21, 71, 179);
+}
+
+.signUp{
+    text-align: center;
+    margin : 12px 0px 12px 0px;
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+.signUpClick{
+    color: rgb(21, 71, 179);
+    text-decoration: underline;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 1188px){
+    
+    .signInForm{
+        width: 25vmax;
+    }
+
+}
+
+@media only screen and (max-width : 995px){
+    
+    .signInForm{
+        width: 30vmax;
+        padding: 1vw 3vw;
+    }
+    
+    .signInHeading{
+        margin-top: 0vw;
+        font-size: 3.7vw;
+    }
+    
+    .signInMsg{
+        font-size: 1.2vw;
+    }
+
+    #email, #password{
+        font-size: 1.3vw;
+    }
+    
+    #signInFormInputs{
+        font-size: 1vw;
+        margin-bottom: 1vw;
+    }
+    
+    
+    #loginBtn{
+        font-size: 1.3vw;
+    }
+    
+    .signUp{
+        font-size: 1vw;
+    }
+
+}
+
+@media only screen and (max-width : 745px){
+    
+    .signInForm{
+        width: 40vmax;
+        padding: 1vw 3vw;
+    }
+    
+    .signInHeading{
+        font-size: 4.5vw;
+    }
+    
+    .signInMsg{
+        font-size: 1.6vw;
+    }
+
+    #email, #password{
+        font-size: 2vw;
+    }
+    
+    #signInFormInputs{
+        font-size: 1.5vw;
+    }
+    
+    #loginBtn{
+        font-size: 1.9vw;
+    }
+    
+    .signUp{
+        font-size: 1.5vw;
+
+    }
+}
+
+
+@media only screen and (max-width : 550px){
+    #loginCloseIco{
+        font-size: 20px;
+        position: relative;
+        bottom: 13px;
+        right: -7px;
+    }
+
+    .signInForm{
+        width: 31.5vmax;
+        padding: 1vw 3vw;
+    }
+    
+    .signInHeading{
+        font-size: 21px;
+    }
+    
+    .signInMsg{
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+    
+    #email, #password{
+        font-size: 12px;
+    }
+
+    #signInFormInputs{
+        font-size: 7px;
+    }
+
+    #passIco{
+        font-size: 17px;
+    }
+
+    #loginBtn{
+        font-size: 10px;
+    }
+
+    .signUp{
+        font-size: 8px;
+
+    }
+    
+}
+

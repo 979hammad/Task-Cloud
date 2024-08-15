@@ -1,0 +1,185 @@
+.signUpForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3vw;
+    width: 20vw;
+ }
+ 
+ .signUpHeading{
+     font-size: 1.8vw;
+     font-weight: 600;
+     margin-bottom: 1vw;
+ }
+ 
+
+ #signUpFormInputs{
+     color: red;
+    min-height: 20px;
+
+ }
+
+ .registerNo{
+   font-size: 1.2vw;
+   margin: 1vw 0vw;
+ }
+ 
+ #signUpBtn{
+     font-size: 1vw;
+     width: 100%;
+     background-color: rgb(17, 86, 190);
+     border-radius: 20px;
+ }
+ 
+ .signIn{
+     position: relative;
+     top: 0.7vw;
+     text-align: center;
+ }
+ 
+ .signInClick{
+     color: rgb(17, 86, 190);
+     font-size: 1vw;
+     text-decoration: underline; 
+ }
+
+ .signInClick:hover{
+   cursor: pointer;
+   color: rgb(0, 0, 184);
+ }
+ 
+   @media only screen and (max-width: 1188px) {
+     .signUpForm{
+        padding: 3vw;
+        width: 29vw;
+      }
+      
+      .signUpHeading{
+         font-size: 2vw;
+      }
+ 
+      #signUpFormInputs{
+         font-size: 1.1vw;
+      }
+      
+      #signUpBtn{
+         font-size: 1.6vw;
+       
+      }
+
+   }
+   
+   @media only screen and (max-width: 995px) {
+     .signUpForm{
+         padding: 3vw;
+         width: 31vw;
+       }
+       
+       .signUpHeading{
+          font-size: 2.5vw;
+       }
+       
+       #signUpemail{
+          font-size: 3vw;
+          width: 49vw;
+       }
+       
+       #signUpFormInputs{
+          font-size: 1.3vw;
+       }
+       
+       #signUpBtn{
+          font-size: 2vw;
+        
+       }
+       
+       .signIn{
+          font-size: 2vw;
+       }
+   }
+     
+   @media only screen and (max-width: 745px) {
+     .signUpForm{
+         padding: 3vw;
+         width: 46vw;
+       }
+       
+       .signUpHeading{
+          font-size: 4vw;
+       }
+       
+       #signUpemail{
+          font-size: 4vw;
+          width: 67vw;
+       }
+       
+       #signUpFormInputs{
+          font-size: 1.5vw;
+       }
+       
+       #signUpBtn{
+          font-size: 2.5vw;
+       }
+       
+   }
+
+   @media only screen and (max-width: 543px){
+      .signUpForm{
+         padding: 3vw;
+         width: 234px;
+       }
+       
+       .signUpHeading{
+         font-size: 18px;
+         margin-bottom: 17px;
+       }
+       
+      #signUpName, #signUpEmail, #signUpPassword,  #signUpCPassword{
+          font-size: 12px;
+         
+       }
+       
+       #signUpFormInputs{
+          font-size: 8px;
+       }
+       
+       #signUpBtn{
+         font-size: 9px;
+        margin-bottom: 14px;
+       }
+       
+   }
+   
+   @media only screen and (max-width: 320px) {
+      #closeIcoSignUp{
+         font-size: 21px;
+         position: relative;
+         top: -7px;
+         right: -6px;
+      }
+
+     .signUpForm{
+         padding: 3vw;
+         width: 185px;
+       }
+       
+       .signUpHeading{
+         font-size: 17px;
+         margin-bottom: 12px;
+       }
+       
+      #signUpName, #signUpEmail, #signUpPassword, #signUpCPassword{
+          font-size: 11px;
+         
+       }
+       
+       #signUpFormInputs{
+          font-size: 8px;
+       }
+       
+       #signUpBtn{
+         font-size: 9px;
+        margin-bottom: 11px;
+       }
+       
+   }
