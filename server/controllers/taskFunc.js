@@ -13,16 +13,16 @@ const addTask = async(req, res) => {
     }
 
     const sql = 'INSERT INTO tasks (title, user_id) VALUES (?, ?)';
-    const [results] = await req.db.query(sql, [title, userId]);
-    res.status(201).json({ id: results.insertId, title });
+    const [data] = await req.db.query(sql, [title, userId]);
+    res.status(201).json({ id: data.insertId, title });
 }
 
 const getAllTasks = async(req, res) => {
     const userId = req.user.id;
 
     const sql = 'SELECT * FROM tasks WHERE user_id = ?';
-    const  [results] = await req.db.query(sql, [userId]);
-    res.status(200).json(results);
+    const  [data] = await req.db.query(sql, [userId]);
+    res.status(200).json(data);
 }
 
 const deleteTask = async(req, res) => {
@@ -33,8 +33,8 @@ const deleteTask = async(req, res) => {
     await req.db.query(sql, [id, userId]);
 
     const sql2 = 'SELECT * FROM tasks WHERE user_id = ?';
-    const  [results] = await req.db.query(sql2, [userId]);
-    res.status(200).json(results);
+    const  [data] = await req.db.query(sql2, [userId]);
+    res.status(200).json(data);
 }
 
 const updateTask = async(req, res) => {
@@ -46,8 +46,8 @@ const updateTask = async(req, res) => {
     await req.db.query(sql, [title, id, userId])
 
     const sql2 = 'SELECT * FROM tasks WHERE user_id = ?';
-    const  [results] = await req.db.query(sql2, [userId]);
-    res.status(200).json(results);
+    const  [data] = await req.db.query(sql2, [userId]);
+    res.status(200).json(data);
 }
 
 export { addTask, getAllTasks, updateTask, deleteTask };
