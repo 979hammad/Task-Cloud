@@ -16,7 +16,7 @@ Setup Instructions
 Before running the server, you need to set up the MySQL database.
 Open MySQL Workbench or any MySQL client, and run the setup.sql
 file provided in the repository to create the necessary database
-and tables.
+and tables.(server>setup.sql)
 
 5. Start the Application
 6. Morver the application is hosted at taskcloud.netlify.app
