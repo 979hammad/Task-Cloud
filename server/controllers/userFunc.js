@@ -19,7 +19,7 @@ const signUp = async (req, res) => {
             throw new ExpressError(400, "Password can't exceed 8 digits");
         }
         if(email.length > 100){
-            throw new ExpressError(400, "Email can't exceed 8 digits");
+            throw new ExpressError(400, "Email can't exceed 100 digits");
         }
 
         const checkUserSql = 'SELECT * FROM users WHERE email = ?';
